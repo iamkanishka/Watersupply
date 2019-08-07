@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head><title>WaterCan supply</title>
+<script type="text/javascript">
+    function fun(){
+    var a=document.forms["myid"]["num"].value;
+     if(a==""){
+    alert("Please Enter the Phone Number");
+    return false;
+    } 
+    }
+    </script>
+</head>
+<body style="background-image:url(imagese.jpg);background-repeat:no-repeat;background-size:100% 100%;background-attachment:fixed">
+    <header>
+<h1><center><i><b>DAVANGERE WATERCAN SUPPLY</b></i></center></h1>
+<h3><center><i><b>Pure Mineral Water</b></i></center></h3>
+</header>
+    <br>
+    <br>
+<left>
+<form id="myid" action="cardinfo.php" method="post">
+<table>
+<center>
+<tr>
+<td>
+<b><i>Card information:</i></b>
+</td>
+<td>
+<input type="text" placeholder="Phone Number" name="num">
+</td>
+</tr>
+</center>
+</table>
+<button style="color:blue;border-radius:100px;" onclick="return fun()"><b>CHECK IN</b></button>
+</form>
+</left>
+<center>    
+<form action="takingorder.html" method="post">
+<button style="color:blue;border-radius:100px;"><b>TAKE ORDERS</b></button>
+</form><br><br>
+</center>
+<center>
+<form  action="orderlist.php" method="post">
+<button style="color:blue;border-radius:100px;"><b>ORDERS LIST</b></button>
+</form><br><br>
+</center>
+<center>
+<form  action="workers.php" method="post">
+<button style="color:blue;border-radius:100px;"><b>WORKERS DETAILS</b></button>
+</form><br><br>
+</center>
+<center>
+<form  action="profordel.php" method="post">
+<button style="color:blue;border-radius:100px;"><b>PROCESS FOR DELIVERY</b></button>
+</form><br><br>
+</center>
+<center>
+<form  action="accessdel.html" method="post">
+<button style="color:blue;border-radius:100px;"><b>DELIVERY REPORT</b></button>
+</form><br><br>
+</center>
+<center>
+<form  action="memlist.php" method="post">
+<button style="color:blue;border-radius:100px;"><b>MEMBERSHIP LIST</b></button>
+</form><br><br>
+</center>
+<center>
+<form  action="sales.php" method="post">
+<button style="color:blue;border-radius:100px;"><b>SALES</b></button>
+</form><br><br>
+</center>
+</body>
+</html>

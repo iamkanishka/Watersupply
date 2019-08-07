@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html>
+<head><title>Take Order</title>
+<script type="text/javascript">
+    function fun(){
+    var a=document.forms["myForm"]["name"].value;
+    var b=document.forms["myForm"]["PhoneNo"].value;
+    var c=document.forms["myForm"]["address"].value;
+    var d=document.forms["myForm"]["landmark"].value;
+    var e=document.forms["myForm"]["doorno"].value;
+    var f=document.forms["myForm"]["noc"].value;
+    if(a==""||b==""||c==""||d==""||e==""||f==""){
+    alert("Please Enter all the Coresponding Values");
+    return false;
+    } 
+    }
+    </script>
+</head>
+<body style="background-image:url(imagesd.jpg);background-repeat:no-repeat;background-size:100% 125%;background-attachment:fixed">
+<header>
+<h1><center><i><b>DAVANGERE WATERCAN SUPPLY</b></i></center></h1>
+<h3><center><i><b>Pure Mineral Water</b></i></center></h3>
+<h2><center><i><b>Taking Order</b></i></center></h2>
+</header>
+<br>
+<br>
+<body>
+<center>
+<form id="myForm" action="ordertookcardn.php" method="post">
+<table>
+<tr>
+<td>
+<b><i>Name :</i></b>
+</td>
+<td>
+<input type="text" placeholder="Name" name="name">
+</td>
+</tr>
+<tr>
+<td>
+<b><i>Phone Number:</i></b>
+</td>
+<td>
+<input type="text" placeholder="Phone Number" name="PhoneNo">
+</td>
+</tr>
+<tr>
+<td>
+<b><i>Address:</i></b>
+</td>
+<td>
+<input type="text" placeholder="Address" name="address">
+</td>
+</tr>
+<tr>
+<td>
+<b><i>Landmark:</i></b>
+</td>
+<td>
+<input type="text" placeholder="Landmark" name="landmark">
+</td>
+</tr>
+<tr>
+<td>
+<b><i>Door Number:</i></b>
+</td>
+<td>
+<input type="text" placeholder="Door Number" name="doorno">
+</td>
+</tr>
+<tr>
+<td>
+<b><i>Number of Cans:</i></b>
+</td>
+<td>
+<input type="text" placeholder="Number of Cans" name="noc">
+</td>
+</tr>
+</center>
+</table>
+<center>
+<br>
+<br>
+<button id="sub" onclick="return fun()"><b>Place Order</b></button>
+</form>
+</center>
+<br>
+<br>
+<br>
+<br>
+<center>
+<form  action="home.html" >
+<button style="color:blue;border-radius:100px;"><b>HOME</b></button>
+</form>
+</center>
+</body>
+</html>

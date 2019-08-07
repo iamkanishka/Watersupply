@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head><title>WaterCan supply</title>
+<script type="text/javascript">
+    function fun(){
+    var a=document.forms["myacess"]["id"].value;
+     if(a==""){
+    alert("Please Enter Worker's id");
+    return false;
+    } 
+    }
+    </script>
+</head>
+<body style="background-image:url(imagesd.jpg);background-repeat:no-repeat;background-size:100% 125%;background-attachment:fixed">
+<header>
+<h1><center><i><b>DAVANGERE WATERCAN SUPPLY</b></i></center></h1>
+<h2><center><i><b>REPORTING DELIVERY</b></i></center></h2>
+</header>
+<br>
+<br>
+<body>
+<center>
+<form id="myacess" action="accessdelb.php" method="post">
+<table>
+<tr>
+<td>
+<b><i>Worker's id :</i></b>
+</td>
+<td>
+<input type="text" placeholder="Worker's id" name="id">
+</td>
+</tr>
+</center>
+</table>
+<center>
+<br>
+<button id="sub" onclick="return fun()"><b>Log in</b></button>
+</form>
+</center>
+</body>
+</html>

@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head><title>WaterCan supply</title>
+<script type="text/javascript">
+    function fun(){
+    var a=document.forms["myForm"]["user"].value;
+    var b=document.forms["myForm"]["pass"].value;
+      if(a==""||b==""){
+    alert("Please Enter all the Coresponding Values");
+    return false;
+    }
+    if(a=="kanishka"&&b=="8951900164"){
+        return true;
+    }
+    else{
+        alert("Please Enter Correct Username and Password");
+    return false;
+    }
+    }
+    </script>
+</head>
+<body style="background-image:url(imagese.jpg);background-repeat:no-repeat;background-size:100% 100%;background-attachment:fixed">
+    <header>
+<h1><center><i><b>ADMIN</b></i></center></h1>
+</header>
+    <br>
+    <br>
+    <body>
+<center>
+<form id="myForm" action="home.html" method="post">
+<table>
+<tr>
+<td>
+<b><i>Username:</i></b>
+</td>
+<td>
+<input type="text" placeholder="Username" name="user">
+</td>
+</tr>
+<tr>
+<td>
+<b><i>Password:</i></b>
+</td>
+<td>
+<input type="password" placeholder="Password" name="pass">
+</td>
+</tr>
+</table>
+<center>
+<br>
+<br>
+<button id="sub" onclick="return fun()"><b>Login</b></button>
+</form>
+</center>
